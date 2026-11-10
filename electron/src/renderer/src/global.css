@@ -1,0 +1,11 @@
+/* Force every layer of the DOM tree to be transparent so the OS compositor
+   shows whatever is behind the Electron window instead of a solid background.
+   The !important guards against any component library or reset that might
+   accidentally set a background color on these root elements. */
+html,
+body,
+#root {
+  background-color: transparent !important;
+  margin: 0;
+  padding: 0;
+}

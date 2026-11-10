@@ -1,0 +1,6 @@
+node_modules/
+out/
+out-smoke/
+dist/
+.DS_Store
+*.tsbuildinfo
